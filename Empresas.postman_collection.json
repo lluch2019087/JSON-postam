@@ -1,0 +1,496 @@
+{
+	"info": {
+		"_postman_id": "1770f4f2-0861-403e-b776-e1d94cf5e692",
+		"name": "Empresas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "compuTEC",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "rol",
+							"value": "ROL_EMPRESA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar Empresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "CompuTec",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "rol ",
+							"value": "ROL_EMPRESA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/createEm",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createEm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkMzMxYzFjYjcwYTFhNmM5NmE4OWIiLCJub21icmUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNDY0MTIxMSwiZXhwIjoxNjE1NDE4ODExfQ.OKtJQDDn6z954sPVWefJI-iXjgBwlI6y9Uo1JIoLx-w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteEm/603d788884960e0a68c5a435",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteEm",
+						"603d788884960e0a68c5a435"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar Empresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2QyYTA2ODhlMTM3NTQyMjkzZTQiLCJub21icmUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNDY0MjY3MSwiZXhwIjoxNjE1NDIwMjcxfQ.JB1C4NPPrAk4hlVLytGZlZd-NPdJwc__BLEN_Vqdbo4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "compuTEC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateEm/603d7d8dd084d3088865749d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateEm",
+						"603d7d8dd084d3088865749d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear Empleado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Tecnologia",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "Tecnico",
+							"type": "text"
+						},
+						{
+							"key": "empresa",
+							"value": "603d7d8dd084d3088865749d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/createEmpleado",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createEmpleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener NombreEm",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "davis",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerNombre",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerNombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener EmpresaEm",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empresaID",
+							"value": "603d7d8dd084d3088865749d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkMzMxYzFjYjcwYTFhNmM5NmE4OWIiLCJub21icmUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNDY0MTIxMSwiZXhwIjoxNjE1NDE4ODExfQ.OKtJQDDn6z954sPVWefJI-iXjgBwlI6y9Uo1JIoLx-w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/deleteEmpleado/603d78d384960e0a68c5a436/603c37985373d94724265cd1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteEmpleado",
+						"603d78d384960e0a68c5a436",
+						"603c37985373d94724265cd1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener IDEm ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerID/603d7e75d084d3088865749e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerID",
+						"603d7e75d084d3088865749e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obetener Departamento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "departamento",
+							"value": "Tecnologia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerDepartamento",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerDepartamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obetener Puesto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "puesto",
+							"value": "Tecnico",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerPuesto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerPuesto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNkN2Q4ZGQwODRkMzA4ODg2NTc0OWQiLCJub21icmUiOiJjb21wdVRFQyIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NjQyNzQwLCJleHAiOjE2MTU0MjAzNDB9.59tveGxsFTtDdGswef5Cb4dHRanmHwuGzV6fpbRINcw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "davis",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateEmpleado/603d7e75d084d3088865749e/603d7d8dd084d3088865749d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateEmpleado",
+						"603d7e75d084d3088865749e",
+						"603d7d8dd084d3088865749d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
